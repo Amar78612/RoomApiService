@@ -15,7 +15,7 @@ namespace RoomApiService.Controllers
     {
         public IActionResult Get()
         {
-            var prdList = new List<Room>() {
+            var roomList = new List<Room>() {
                 new Room(){ RoomId = 1, FloorNumber = 4, RoomNumber = 100, RoomType ="Double", RoomCapacity=3, CostPerDay =2800, RoomStatus="Available", HotelId=100,HotelName="ABC" },
                 new Room(){ RoomId = 2, FloorNumber = 4, RoomNumber = 101, RoomType ="Double", RoomCapacity=3, CostPerDay =3800, RoomStatus="Available", HotelId=100,HotelName="ABC"  },
                 new Room(){ RoomId = 3, FloorNumber = 5, RoomNumber = 500, RoomType ="3BHK", RoomCapacity=6, CostPerDay =5800, RoomStatus="Available",   HotelId=200,HotelName="PQR" },
@@ -24,7 +24,7 @@ namespace RoomApiService.Controllers
 
             };
 
-            return Ok(prdList);
+            return Ok(roomList);
         }
     }
 }
